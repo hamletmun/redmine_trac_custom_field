@@ -7,8 +7,10 @@ upon issue ticket creation, if the user pastes in an Trac ticket number it'll cr
 simple link to view that ticket.
 
 There are 3 options under Administration > Plugins > Configure:
-* Path to your Trac install (\https://your.trac.server.com/)
+* Path to your Trac install
+ https://your.trac.server.com/
 * Name of your Trac project
+ tracproject
 * Whether or not to open Trac links in a new window
 
 Plugin can be found here: http://www.redmine.org/plugins/redmine_trac_custom_field
@@ -17,8 +19,10 @@ Plugin can be found here: http://www.redmine.org/plugins/redmine_trac_custom_fie
 
 To install this plugin:
 
-* Clone into your plugins dir: git clone git://github.com/hamletmun/redmine_trac_custom_field.git
-* Rake to install plugin: rake redmine:plugins:migrate RAILS_ENV=production
+* Clone into your plugins dir:
+ git clone git://github.com/hamletmun/redmine_trac_custom_field.git
+* Rake to install plugin:
+ rake redmine:plugins:migrate RAILS_ENV=production
 * Restart Apache/Nginx/Unicorn/etc.
 * Configure from Administration > Plugins
 * Create custom field of type Trac
@@ -26,4 +30,5 @@ To install this plugin:
 
 == Removal
 
-Rake to remove plugin: rake redmine:plugins:migrate NAME=redmine_trac_custom_field VERSION=0 RAILS_ENV=production
+Rake to remove plugin:
+ rake redmine:plugins:migrate NAME=redmine_trac_custom_field VERSION=0 RAILS_ENV=production
