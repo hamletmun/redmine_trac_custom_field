@@ -1,6 +1,10 @@
 <p>
-  <%=content_tag(:label, l(:label_rt_url))%>
-  <%=text_field_tag 'settings[rt_url]', @settings['rt_url'] %><br />
+  <%=content_tag(:label, l(:label_trac_url))%>
+  <%=text_field_tag 'settings[trac_url]', @settings['trac_url'] %><br />
+</p>
+<p>
+  <%=content_tag(:label, l(:label_trac_project))%>
+  <%=text_field_tag 'settings[trac_project]', @settings['trac_project'] %><be />
 </p>
 <p>
   <%=content_tag(:label, l(:label_new_window))%>
